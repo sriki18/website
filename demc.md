@@ -49,7 +49,7 @@ xlabel('Generations'); ylabel('Objective value');
 set(gca, 'linewidth', 2, 'fontsize', 14);
 ```
 
-![Plot of the objective function value across generations](/assets/DEMC/objplot.PNG)
+![Plot of the objective function value across generations](/assets/DEMC/objplot.png)
 
 The different colors represent the different chains which were run in parallel. Eyeballing the plot suggests convergence, but I sometimes like to look at the log of the objective functions or the post warm-up (or burn-in) period:
 
@@ -66,7 +66,7 @@ xlabel('Generations'); ylabel('Objective value');
 set(gca, 'linewidth', 2, 'fontsize', 14);
 ```
 
-![Plot of log objective value and the objective value after warm-up](/assets/DEMC/zoom_objplot.PNG)
+![Plot of log objective value and the objective value after warm-up](/assets/DEMC/zoom_objplot.png)
 
 We do not see any outlier chains in the log objective plot (left). Also there is good mixing in the objective plot after the warm-up period, suggesting convergence to the optimum. One can also look at the mixing of the parameters with:
 
@@ -85,13 +85,13 @@ xlabel('Generations'); ylabel('\sigma');
 set(gca, 'linewidth', 2, 'fontsize', 14);
 ```
 
-![Plot of the sampled posteriors over generations](/assets/DEMC/mixing.PNG)
+![Plot of the sampled posteriors over generations](/assets/DEMC/mixing.png)
 
 Again, we see good mixing without any outlier chains. The original values (`mu_real` and `sig_real`) are given by the dotted lines. Since the chains oscillate around the assumed `mu_real` and `sig_real`, convergence is confirmed.
 
 ### Note 1
 
-In this example case, it was easy to verify convergence by comparing with `mu_real` and `sigma_real`. Yet, in practice, convergence cannot be confirmed easily, only supported. The Rhat metric or the Gelman-Rubin diagnostic is one such metric and is discussed <a href="./rhat"> here </a>.
+In this example case, it was easy to verify convergence by comparing with `mu_real` and `sigma_real`. Yet, in practice, convergence cannot be confirmed easily, only supported. The Rhat metric or the Gelman-Rubin diagnostic is one such metric and is discussed <a href="rhat"> here </a>.
 
 ## Obtaining posteriors
 
@@ -127,7 +127,7 @@ legend([s, h2], {'Samples', 'Contour'})
 >> Predicted mu = 4.01, sigma = 1.01
 ```
 
-![Scatter plot of the sampled posteriors](/assets/DEMC/post.PNG)
+![Scatter plot of the sampled posteriors](/assets/DEMC/post.png)
 
 ### Note 2
 

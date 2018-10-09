@@ -95,7 +95,7 @@
 <span class="nb">set</span><span class="p">(</span><span class="nb">gca</span><span class="p">,</span> <span class="s1">'linewidth'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'fontsize'</span><span class="p">,</span> <span class="mi">14</span><span class="p">);</span>
 </code></pre></div></div>
 
-<p><img src="/assets/DEMC/objplot.PNG" alt="Plot of the objective function value across generations" /></p>
+<p><img src="/assets/DEMC/objplot.png" alt="Plot of the objective function value across generations" /></p>
 
 <p>The different colors represent the different chains which were run in parallel. Eyeballing the plot suggests convergence, but I sometimes like to look at the log of the objective functions or the post warm-up (or burn-in) period:</p>
 
@@ -111,7 +111,7 @@
 <span class="nb">set</span><span class="p">(</span><span class="nb">gca</span><span class="p">,</span> <span class="s1">'linewidth'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'fontsize'</span><span class="p">,</span> <span class="mi">14</span><span class="p">);</span>
 </code></pre></div></div>
 
-<p><img src="/assets/DEMC/zoom_objplot.PNG" alt="Plot of log objective value and the objective value after warm-up" /></p>
+<p><img src="/assets/DEMC/zoom_objplot.png" alt="Plot of log objective value and the objective value after warm-up" /></p>
 
 <p>We do not see any outlier chains in the log objective plot (left). Also there is good mixing in the objective plot after the warm-up period, suggesting convergence to the optimum. One can also look at the mixing of the parameters with:</p>
 
@@ -129,13 +129,13 @@
 <span class="nb">set</span><span class="p">(</span><span class="nb">gca</span><span class="p">,</span> <span class="s1">'linewidth'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'fontsize'</span><span class="p">,</span> <span class="mi">14</span><span class="p">);</span>
 </code></pre></div></div>
 
-<p><img src="/assets/DEMC/mixing.PNG" alt="Plot of the sampled posteriors over generations" /></p>
+<p><img src="/assets/DEMC/mixing.png" alt="Plot of the sampled posteriors over generations" /></p>
 
 <p>Again, we see good mixing without any outlier chains. The original values (<code class="highlighter-rouge">mu_real</code> and <code class="highlighter-rouge">sig_real</code>) are given by the dotted lines. Since the chains oscillate around the assumed <code class="highlighter-rouge">mu_real</code> and <code class="highlighter-rouge">sig_real</code>, convergence is confirmed.</p>
 
 <h3 id="note-1">Note 1</h3>
 
-<p>In this example case, it was easy to verify convergence by comparing with <code class="highlighter-rouge">mu_real</code> and <code class="highlighter-rouge">sigma_real</code>. Yet, in practice, convergence cannot be confirmed easily, only supported. The Rhat metric or the Gelman-Rubin diagnostic is one such metric and is discussed <a href="./rhat"> here </a>.</p>
+<p>In this example case, it was easy to verify convergence by comparing with <code class="highlighter-rouge">mu_real</code> and <code class="highlighter-rouge">sigma_real</code>. Yet, in practice, convergence cannot be confirmed easily, only supported. The Rhat metric or the Gelman-Rubin diagnostic is one such metric and is discussed <a href="rhat"> here </a>.</p>
 
 <h2 id="obtaining-posteriors">Obtaining posteriors</h2>
 
@@ -168,7 +168,7 @@
 <div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;</span> <span class="n">Predicted</span> <span class="n">mu</span> <span class="o">=</span> <span class="mf">4.01</span><span class="p">,</span> <span class="n">sigma</span> <span class="o">=</span> <span class="mf">1.01</span>
 </code></pre></div></div>
 
-<p><img src="/assets/DEMC/post.PNG" alt="Scatter plot of the sampled posteriors" /></p>
+<p><img src="/assets/DEMC/post.png" alt="Scatter plot of the sampled posteriors" /></p>
 
 <h3 id="note-2">Note 2</h3>
 
