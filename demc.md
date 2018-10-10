@@ -87,7 +87,7 @@ set(gca, 'linewidth', 2, 'fontsize', 14);
 
 ![Plot of the sampled posteriors over generations](/assets/DEMC/mixing.png)
 
-Again, we see good mixing without any outlier chains. The original values (`mu_real` and `sig_real`) are given by the dotted lines. Since the chains oscillate around the assumed `mu_real` and `sig_real`, convergence is confirmed.
+Again, we see good mixing without any outlier chains. The original values (`mu_real` and `sig_real`) are given by the dotted lines. Since the chains oscillate around the assumed `mu_real` and `sig_real`, convergence is confirmed. (Note that the oscillations are small as indicated by the Y axis units).
 
 ### Note 1
 
