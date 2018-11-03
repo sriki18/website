@@ -3,39 +3,38 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/assets/css/style.css?v=6ce6eaae50b06a5ed8287355c43ff5a217329c8d">
+    <link rel="stylesheet" href="/assets/css/style.css?v=b0804afb770ca5f328ffceda4927e7ddf23bd73d">
     <link rel="stylesheet" type="text/css" href="/assets/css/print.css" media="print">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    <!-- <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_CHTML">
+    </script> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async>
+    </script>
+    <!-- <script type="text/javascript"
+      src="file:///../../../projects/MathJax/MathJax.js">
+    </script> -->
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Rhat or the Gelman-Rubin diagnostic | Musings</title>
+<title>(or the Gelman-Rubin diagnostic) | Musings</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="Rhat or the Gelman-Rubin diagnostic" />
+<meta property="og:title" content="(or the Gelman-Rubin diagnostic)" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="http://localhost:4000/rhat.html" />
 <meta property="og:url" content="http://localhost:4000/rhat.html" />
 <meta property="og:site_name" content="Musings" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"http://localhost:4000/rhat.html","headline":"Rhat or the Gelman-Rubin diagnostic","@context":"http://schema.org"}</script>
+{"@type":"WebPage","url":"http://localhost:4000/rhat.html","headline":"(or the Gelman-Rubin diagnostic)","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
-  <!-- <script type="text/javascript"
-   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js">
-</script> -->
-  <!-- <script type="text/javascript"
-  src="projects/MathJax/MathJax.js">
-</script> -->
-<script type="text/javascript"
-   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_CHTML">
-</script>
+  
   <body>
     <div class="sidenav">
             <a href="index">Home</a>
             <a href="demc" title="Differential Evolution Markov Chain">DE-MC</a>
-            <a href="rhat" title="The Gelman-Rubin diagnostic">Rhat</a>
+            <a href="rhat" title="The Gelman-Rubin diagnostic">Gelman-Rubin diagnostic</a>
     </div>
 
     <!-- <div class="vertical-menu">
@@ -49,7 +48,7 @@
       <div class="inner">
 
         <header>
-          <h1>Rhat or the Gelman-Rubin diagnostic</h1>
+          <h1>$$\hat{R}$$ (or the Gelman-Rubin diagnostic)</h1>
           <h2></h2>
         </header>
         <section id="downloads" class="clearfix">
@@ -58,25 +57,8 @@
         </section>
         <hr>
         <section id="main_content">
-          <h1 id="rhat-or-the-gelman-rubin-diagnostic">Rhat or the Gelman-Rubin diagnostic</h1>
-
-<p>The Rhat diagnostic was first introduced in <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>, but the version presented here is the one discussed in <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>. Put simply, it accounts for between chain variance and within chain variance to produce a single number (Rhat). An algorithm such as <a href="demc">Differential Evolution Markov Chain</a> is thought to have converged when Rhat is close to 1 or Rhat&lt;1.1.</p>
-
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{align*}
-  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
-  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
-  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
-      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
-      \vdots & \ddots & \vdots \\
-      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
-    \end{array} \right)
-  \left( \begin{array}{c}
-      y_1 \\
-      \vdots \\
-      y_n
-    \end{array} \right)
-\end{align*} %]]></script>
+          <p>The <script type="math/tex">\hat{R}</script> diagnostic was first introduced in <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>, but the version presented here is the one discussed in <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>. Put simply, it accounts for between chain variance and within chain variance to produce a single number (<script type="math/tex">\hat{R}</script>). An algorithm such as <a href="demc">Differential Evolution Markov Chain</a> is thought to have converged when <script type="math/tex">\hat{R}</script> is close to 1 or <script type="math/tex">% <![CDATA[
+\hat{R}<1.1 %]]></script>.</p>
 
 <div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="n">pending</span><span class="o">&gt;</span>
 </code></pre></div></div>

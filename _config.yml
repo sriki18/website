@@ -1,5 +1,6 @@
 theme: jekyll-theme-tactile
 title: Musings
 repository: sriki18/matlab_plot_1
+markdown: kramdown
 kramdown:
   input: kramdown
