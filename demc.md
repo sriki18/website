@@ -91,7 +91,7 @@ Again, we see good mixing without any outlier chains. The original values (`mu_r
 
 ### Note 1
 
-In this example case, it was easy to verify convergence by comparing with `mu_real` and `sigma_real`. Yet, in practice, convergence cannot be confirmed easily, only supported. The Rhat metric or the Gelman-Rubin diagnostic is one such metric and is discussed <a href="rhat"> here </a>.
+In this example case, it was easy to verify convergence by comparing with `mu_real` and `sigma_real`. Yet, in practice, convergence cannot be confirmed easily, only supported. Some convergence metrics are described at <https://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_introbayes_sect008.htm>.
 
 ## Obtaining posteriors
 
