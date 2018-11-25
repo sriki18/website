@@ -14,7 +14,7 @@ The first example discussed in [^1] is the sensitivity of the Ishigami-Homma fun
 
 If you found this useful, please cite as :
 
-> Srikiran C (2018). PAWN Global Sensitivity Analysis algorithm (https://www.github.com/sriki18/pawn), GitHub.
+> Srikiran Chandrasekaran (2018). PAWN Global Sensitivity Analysis algorithm (https://www.github.com/sriki18/pawn), GitHub.
 
 ## Additional information
 
