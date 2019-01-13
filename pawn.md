@@ -18,7 +18,7 @@ If you found this useful, please cite as :
 
 ## Additional information
 
-The original authors of the PAWN paper maintain a website which provides [code for PAWN](https://www.safetoolbox.info/pawn-method/) and additionally a [cool sensitivity analysis toolbox](https://www.safetoolbox.info/info-and-documentation/) for MATLAB called `SAFE Toolbox`.
+The original authors of the PAWN paper maintain a website which provides the [code for PAWN](https://www.safetoolbox.info/pawn-method/) and additionally a [cool sensitivity analysis toolbox](https://www.safetoolbox.info/info-and-documentation/) for MATLAB called `SAFE Toolbox`.
 
 ## References
 
