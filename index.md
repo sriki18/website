@@ -1,5 +1,5 @@
 ---
-title: Musings
+title: The Cake is a Lie
 ---
 
 On this blog(?) I plan to share things that I found useful or cool over the last few years. Please feel free to reach out to me on LinkedIn <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
