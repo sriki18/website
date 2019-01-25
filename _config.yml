@@ -1,6 +1,6 @@
 theme: jekyll-theme-tactile
-title: Musings
-repository: sriki18/matlab_plot_1
+title: TheCakeIsALie
+repository: sriki18/website
 markdown: kramdown
 kramdown:
   input: kramdown
