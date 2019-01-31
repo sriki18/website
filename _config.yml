@@ -32,6 +32,14 @@ author:
 words_per_minute         : 200
 
 
+# Analytics
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "UA-132381274-1"
+    anonymize_ip: false # default
+
+
 # Comments
 talkyard_server_url: https://comments-for-sriki18-github-io.talkyard.net
 discussion_id: per-discussion-id
