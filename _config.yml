@@ -26,7 +26,17 @@ repository: "sriki18/website"
 author:
   name     : "Srikiran Chandrasekaran"
   bio      : "Grad student, Jiang Lab @ UC Irvine"
-  location : "Irvine, California" 
+  links:
+   - label: "Jiang Lab"
+     icon: "fas fa-fw fa-flask"
+     url: "https://jianglab.eng.uci.edu/"
+   - label: "GitHub"
+     icon: "fab fa-fw fa-github"
+     url: "https://github.com/sriki18"
+   - label: "LinkedIn"
+     icon: "fab fa-fw fa-linkedin-in"
+     url: "https://linkedin.com/in/srikiran-c"
+
 
 # Other parameters
 words_per_minute         : 200
